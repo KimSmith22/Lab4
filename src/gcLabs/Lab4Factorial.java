@@ -19,7 +19,7 @@ public class Lab4Factorial {
 		// TODO Auto-generated method stub
 		
 		//declare variables
-		int number = 1;
+		int number;
 		int i = 1;
 		int factorial = 1;
 		
@@ -36,7 +36,6 @@ public class Lab4Factorial {
 		System.out.println("Enter a number from 1 to 10: ");
 		Scanner k = new Scanner(System.in);
 		number = k.nextInt();
-		System.out.println();
 		
 		//formula to find factorial
 		for( i = 1; i <=number; i++);
@@ -46,8 +45,12 @@ public class Lab4Factorial {
 		System.out.println("The factorial of " + (number) + " is " + (factorial));	
 		System.out.println();
 		
+		System.out.println("Continue? y/n: ");
+		k.nextLine();
 		
+		choice = k.nextLine();
 	}while (choice.equals("y"));
 	}
-
+/* this version works with some errors; issues with formula causing unexpected output
+ */
 }
