@@ -19,7 +19,6 @@ public class Lab4Factorial {
 	   {
 	      int num;
 	      int i;
-	      int factor = 1;
 	      String choice = "y";
 	      
 	    //sysout and prompts for user input
@@ -30,7 +29,8 @@ public class Lab4Factorial {
 	    		System.out.println("Enter a number from 1 to 10: ");
 	    		Scanner k = new Scanner(System.in);
 	    		num = k.nextInt();
-	 
+	  	      int factor = 1; //moved variable inside of loop to reset value to 1 each time program runs
+
 	     
 	         for ( i = 1 ; i <= num ; i++ )
 	            factor = factor*i;
